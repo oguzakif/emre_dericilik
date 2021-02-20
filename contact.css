@@ -1,0 +1,59 @@
+.upper-background{
+    width: 100%;
+    height: max-content;
+    background-image: url('images/contact-site.jpg');
+    background-position: center center;
+	background-size:cover;
+    background-blend-mode: overlay;
+}
+
+.iconSize{
+    font-size: 4.5rem;
+}
+.contactHeader{
+    font-size:2.5rem;
+}
+.contactText{
+    font-size:1.8rem;
+    opacity:0.9;
+}
+.navbarStyle {
+    background-color:#111;
+    position:relative;
+}
+.positionFixed{
+    position:fixed !important;
+}
+.listStlye p a {
+    color:#f5f5f5 !important;
+}
+#contact{
+    height:max-content;
+}
+#mailForm{
+    height:max-content;
+}
+.inputPlace{
+    display: block;
+    width: max-content;
+    background: 0 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    padding: 0 5px;
+}
+.formStyle{
+    border-radius: 15px;
+    border: 1px solid;
+    box-shadow: 4px 4px 4px 4px #888888;
+}
+.input{
+    outline: none;
+    border: none;
+}
+.validate-input{
+    position:relative;
+    width: 100%;
+    border-bottom: 2px solid #d9d9d9;
+}
+

@@ -1,0 +1,311 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/loading-bar.min.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/loading-bar.min.js"></script>
+</head>
+
+<body>
+
+    <!--NAVBAR SECTION-->
+
+
+    <div class="desktopMenu">
+        <nav class="navbar navbar-expand-lg fixed-top navbarStyle">
+            <div class="row navbar-nav">
+                <div class="col-md-3">
+                    <a href="/emre_dericilik/contact.html" class="navbar-brand">
+                        <img class="img-fluid" src="images/logo/Group 9.png">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-horizontal-md justify-content-center">
+                        <li class="nav-item active listStyle mr-5"><a class="nav-link"
+                                href="/emre_dericilik/index.html">About</a></li>
+                        <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item listStyle"><a class="nav-link"
+                                href="/emre_dericilik/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="justify-content-center">
+                        <i class="bi-facebook mr-4" style="font-size: 2.5rem; color: #4267B2"></i>
+                        <i class="bi-instagram mr-4" style="font-size:2.5rem; color: #d6249f"></i>
+                        <i class="bi-twitter" style="font-size:2.5rem; color:#1DA1F2"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobileMenu fixed-top">
+        <div class="buttonBackground">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li>
+                    <a href="/emre_dericilik/index.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="/emre_dericilik/contact.html">Contact</a>
+                </li>
+            </ul>
+            <img class="img-fluid" src="images/logo/logopng.png">
+        </nav>
+    </div>
+
+
+    <!--CONTACT BACKGROUND-->
+    <div class="upper-background">
+        <div class="container">
+            <div class="row">
+                <div class="pt-10 pb-10">
+                   <h3 class="display-5">Anasayfa/İletişim</h3> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-8 pb-8" id="contact">
+        <div class="container">
+            <div class="row">
+                <h3 class="display-2">
+                    Bizimle iletişime geçmek için aşağıdaki bağlantıları kullanabilirsiniz.
+                </h3>
+            </div>
+            <div class="row mt-8">
+                <div class="col-md-4 text-center">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <i class="bi bi-telephone-fill iconSize"></i>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactHeader">Telefon</span>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactText">+90 216 771 30 33</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <i class="bi bi-envelope-fill iconSize"></i>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactHeader">Mail</span>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactText">info@emremoderndericilik.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <i class="bi bi-map iconSize"></i>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactHeader">Adres</span>
+                        </li>
+                        <li class="listStyle mt-3">
+                            <span class="contactText">Yeni Tabakhaneler 6.Sk. No:28 GEREDE / BOLU</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="mb-8" id ="mailForm">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 p-5 justify-content-center formStyle">
+                    <form class="validate-form contact-form justify-content-center ">
+                        <h3 class="display-4 text-center">
+                            İletişim Formu
+                        </h3>
+                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="İsim alanının doldurulması gereklidir">
+                                <blockquote class="blockquote">
+                                    <h3 class="display-6">Adınız</h3>
+                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen adınızı giriniz">
+                                </blockquote>
+                            </div>
+                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="Mail alanının doldurulması zorunludur">
+                                <blockquote class="blockquote">
+                                    <h3 class="display-6">Email</h3>
+                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen email adresinizi giriniz">
+                                </blockquote>
+                                
+                            </div>
+                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="Mesaj alanının doldurulması gereklidir.">
+                                <blockquote class="blockquote">
+                                    <h3 class="display-6">Mesajınız</h3>
+                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen mesajınızı giriniz">
+                                </blockquote>
+                            </div>
+                            <div class="row justify-content-center p-5">
+                                <button class="btn btn-success">
+                                    <span>Gönder</span>
+                                </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapSection">
+        <div>
+            <iframe width="100%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?q=40.80167,32.208647&amp;hl=tr&amp;z=18&amp;output=embed">
+            </iframe>
+        </div>
+    </section>
+    
+
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid" src="images/logo/logopng.png" alt="footer_logo">
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Kurumsal</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">Topluluk Profili</a></li>
+                        <li class="listStyle"><a href="#">Değerlerimiz</a></li>
+                        <li class="listStyle"><a href="#">Kilometre Taşları</a></li>
+                        <li class="listStyle"><a href="#">İnsan Kaynakları Politikamız</a></li>
+                        <li class="listStyle"><a href="#">Üretim Merkezlerimiz</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Bize Ulaşın</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">No: +90 554 512 15 60</a></li>
+                        <li class="listStyle"><a href="#">E-mail: info@emremoderndericilik.com</a></li>
+                        <li class="listStyle mt-2">
+                            <h3>Sosyal Medya Hesaplarımız</h3>
+                        </li>
+                        <li class="listStyle">
+                            <a href="#"><i class="bi-facebook mr-3" style="font-size: 2rem; color: #4267B2"></i></a>
+                            <a href="#"><i class="bi-instagram mr-3" style="font-size:2rem; color: #d6249f"></i></a>
+                            <a href="#"><i class="bi-twitter" style="font-size:2rem; color:#1DA1F2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Adresimiz</h3>
+                        </li>
+                        <li class="listStyle">
+                            <p>
+                                İSKEFE HOLDİNG ANONİM ŞİRKETİ</br>
+
+                                İstanbul Deri Organize Sanayi Bölgesi</br>
+                                L3-4C Parsel, 34956, Tuzla/İstanbul</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright row mt-5 pt-3 text-center">
+                <div class="col-md-12">
+                    <span class=" text-center">Copyright © Emre Modern Dericilik 2021 Tüm Hakları Saklıdır.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPT SECTION-->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+
+    <!--3D TRANSITION EFFECT SCRIPT-->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".parallaxHome"), {
+            max: 50,
+            speed: 500,
+            perspective: 500
+        });
+    </script>
+
+    <!--LOADING BAR SCRIPT-->
+    <script>
+        var ldbar = new ldBar(".circle1");
+        var ldbar2 = new ldBar(".circle2");
+        var ldbar3 = new ldBar(".circle3");
+        var ldbar4 = new ldBar(".circle4");
+        ldbar.set(80); ldbar2.set(75); ldbar3.set(100); ldbar4.set(50); 
+    </script>
+
+    <!--NAVBAR ANIMATION SCRIPT-->
+    <script>
+        if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) || !$(window).width > 998) {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 70) {
+                    $('.navbarStyle').addClass('affix');
+                    $('.navbarStyle').addClass('positionFixed');
+                    console.log("OK");
+                } else {
+                    $('.navbarStyle').removeClass('affix');
+                    $('.navbarStyle').removeClass('positionFixed');
+                }
+                if ($(document).scrollTop() > 70) {
+                    $('.navbarStyle').addClass('positionFixed');
+                } else {
+                    $('.navbarStyle').removeClass('positionFixed');
+                }
+            });
+        }
+    </script>
+
+    <!--MOBILE MENU SCRIPT-->
+    <script>
+        let burger = document.getElementById('burger'),
+            nav = document.getElementById('main-nav');
+
+        burger.addEventListener('click', function (e) {
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+        /* Onload demo - dirty timeout */
+        let clickEvent = new Event('click');
+
+        window.addEventListener('load', function (e) {
+            burger.dispatchEvent(clickEvent);
+        });
+    </script>
+</body>
+
+</html>

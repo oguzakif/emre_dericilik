@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+nav div {
+    margin:0 !important;
+}
+
+
+/* Navbar section */
+
+.navbarStyle {
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.navbarStyle {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+.listStyle{
+    list-style: none;
+}
+.navbar .listStyle a {
+    font-size:2.2rem;
+    color:#fff;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.navbar .listStyle a:hover {
+    color:#FFD700;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/5e722f07c3fd9.png') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center center;
+	background-size:cover;
+    background-blend-mode: overlay;
+}
+.home2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/nubuk.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center center;
+	background-size:cover;
+    background-blend-mode: overlay;
+}
+
+.parallaxHome {
+    width:max-content;
+    height: max-content;
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display:block;
+    border-top: 1px solid #FFD700;
+    border-bottom: 1px solid #FFD700;
+    color:#fff;
+
+
+}
+section#home div > blockquote > h1 ~ p ~ footer {
+    color:#fff;
+}
+.parallaxHome h1{
+    font-size: 50px;
+}
+.parallaxHome p{
+    font-size:20px;
+}
+
+.container{
+    height:100%;
+}
+#leatherProperties{
+    height:max-content;
+}
+section#leatherProperties div > blockquote > p ~ h3{
+    color:black;
+}
+section#leatherProperties div > blockquote > p{
+    font-weight: 100;
+}
+#rawHideSection {
+    background-image: url('images/nubuk2.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center center;
+	background-size:cover;
+    background-blend-mode: overlay;
+    height:max-content;
+    width:auto;
+    padding:15rem;
+    color :#fff;
+}
+
+section#rawHideSection div blockquote h3 ~ p{
+    color:#fff;
+}
+#mileStoneSection{
+    height:max-content;
+}
+
+.mileStoneGoldCounter {
+    color :#FFD700;
+    font-size:3rem;
+    height:max-content;
+    width:auto;
+}
+#aboutUs{
+    height:max-content;
+}
+
+.btn-outline-rawHide {
+    color:#fff;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.btn-outline-rawHide:hover {
+    color:#FFD700;
+    border: 2px solid #FFD700;
+    
+}
+
+#aboutSection{
+    background-image: url('images/nubuk2.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center center;
+	background-size:cover;
+    background-blend-mode: overlay;
+    height:max-content;
+    width:auto;
+    color:rgb(255,255,255,.9);
+}
+
+section#aboutSection div blockquote p {
+    font-size: 1.5rem;
+}
+
+#footer{
+    background-color: black;
+    color:rgb(255,255,255,.9);
+    padding:10rem 10rem 3rem 10rem;
+    height:max-content;
+
+}
+#footer .listStyle a {
+    font-size:1rem;
+    text-decoration: none;
+    color:rgb(255,255,255,.8);
+}
+#footer .listStyle a:hover {
+    color:#FFD700;
+}
+#footer .copyright{
+    border-top: 0.5px solid #fff;
+    font-size:1.2rem;
+}
+section#footer > div > ul > li{
+    list-style: none;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-6 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-7{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+.mr-optimum{
+    margin-right: 8.3333333333%;
+}
+.pt-8{
+    padding-top:8rem !important;
+}
+.pb-8{
+    padding-bottom:8rem !important;
+
+}
+.p-8{
+    padding:8rem !important;
+}
+.p-10 {
+    padding: 10rem !important;
+}
+.pt-10 {
+    padding-top: 10rem !important;
+}
+.pb-10 {
+    padding-bottom: 10rem !important;
+}
+.mt-8{
+    margin-top: 8rem!important
+}
+.mb-8 {
+    margin-bottom: 8rem!important
+
+}
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+@media only screen and (max-width: 768px) {
+    .affix{
+        padding-top:25px;
+        padding-bottom:25px;
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    .navbarStyle{
+        background-color:#111;
+    }
+}
+
+.mobileMenu{
+    display:none;
+}
+.desktopMenu{
+    display:flex;
+}
+
+
+/* mobile navbar sidebar under lg breakpoint */
+@media (max-width: 992px) {
+    .mobileMenu{
+        display:block;
+    }
+    .desktopMenu{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile menu positionning */
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    z-index: 1030;
+    text-align: center;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+}
+
+.main-nav.is-open {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+}
+
+/* Yellow band effect */
+.main-nav::before {
+	 content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #FFD700;
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+}
+
+.main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0);
+}
+
+/* Skewing effect on menu links */
+.main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%; /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+}
+
+.main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
+}
+
+/* Apparition effect on links */
+.main-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-nav li:nth-child(1) a {
+	transition: all 275ms 175ms
+}
+.main-nav li:nth-child(2) a {
+	transition: all 275ms 225ms
+}
+.main-nav li:nth-child(3) a {
+	transition: all 275ms 275ms
+}
+.main-nav li:nth-child(4) a {
+	transition: all 275ms 325ms
+}
+.main-nav li:nth-child(5) a {
+	transition: all 275ms 375ms
+}
+
+
+/* Decoration */
+.main-nav ul,
+.main-nav li {
+	list-style: none;
+	padding: 0;
+}
+.main-nav a {
+	display: block;
+	padding: 12px 0;
+	color: #111;
+	font-size: 2.5em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.open-main-nav {
+	position: absolute;
+	top: 15px;
+	padding-top: 20px;
+	right: 15px;
+	z-index: 1000;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+.open-main-nav:focus {
+	outline: none;
+}
+.burger {
+	position: relative;
+	display: block;
+	width: 28px;
+	height: 4px;
+	margin: 0 auto;
+	background: #FFD700;
+	transform: skew(5deg);
+	transition: all .275s;
+}
+
+.burger:after,
+.burger:before {
+	content: '';
+	display: block;
+	height: 100%;
+	background: #FFD700;
+	transition: all .275s;
+}
+
+.burger:after {
+	transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+
+.burger:before {
+	transform: translateY(-16px) skew(-10deg);
+}
+
+/* Toggle State part */
+.is-open .burger {
+	transform: skew(5deg) translateY(-8px) rotate(-45deg);
+    background: #111;
+
+}
+
+.is-open .burger:before {
+	transform: translateY(0px) skew(-10deg) rotate(75deg);
+    background: #111;
+
+}
+
+.is-open .burger:after {
+	transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+}
+
+/* MENU Text part */
+
+.burger-text {
+	display: block;
+	font-size: .675rem;
+	letter-spacing: .05em;
+	margin-top: .5em;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	color: #FFD700;
+}
+
+.is-open .burger-text {
+    color:#111;
+}
+.buttonBackground{
+    background-color:#111;
+}

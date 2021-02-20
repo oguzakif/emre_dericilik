@@ -1,0 +1,525 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/loading-bar.min.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/loading-bar.min.js"></script>
+</head>
+
+<body>
+
+    <!--NAVBAR SECTION-->
+
+
+    <div class="desktopMenu">
+        <nav class="navbar navbar-expand-lg fixed-top navbarStyle">
+            <div class="row navbar-nav">
+                <div class="col-md-3">
+                    <a href="/emre_dericilik/contact.html" class="navbar-brand">
+                        <img class="img-fluid" src="images/logo/logopng.png">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-horizontal-md justify-content-center">
+                        <li class="nav-item active listStyle mr-5"><a class="nav-link" href="/emre_dericilik/index.html">About</a></li>
+                        <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item listStyle"><a class="nav-link"
+                                href="/emre_dericilik/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="justify-content-center">
+                        <i class="bi-facebook mr-4" style="font-size: 2.5rem; color: #4267B2"></i>
+                        <i class="bi-instagram mr-4" style="font-size:2.5rem; color: #d6249f"></i>
+                        <i class="bi-twitter" style="font-size:2.5rem; color:#1DA1F2"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobileMenu fixed-top">
+        <div class="buttonBackground">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="/emre_dericilik/contact.html">Contact</a>
+                </li>
+            </ul>
+            <img class="img-fluid" src="images/logo/logopng.png">
+        </nav>
+    </div>
+
+
+
+    <!--HOME SECTION SLIDER-->
+
+
+    <section id="home">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="home">
+                        <div class="container">
+                            <div class="row h-100">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 my-auto">
+                                    <div class="parallaxHome" data-tilt data-tilt-full-page-listening>
+                                        <blockquote class="blockquote text-center">
+                                            <h1 class="display-4">Emre Dericilik</h1>
+                                            <p class="mb-3">Lorem ipsum dolor sit amet</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite
+                                                    title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="home2">
+                        <div class="container">
+                            <div class="row h-100">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 my-auto">
+                                    <div class="parallaxHome" data-tilt data-tilt-full-page-listening>
+                                        <blockquote class="blockquote text-center">
+                                            <h1 class="display-4">Emre Dericilik</h1>
+                                            <p class="mb-3">Lorem ipsum dolor sit amet</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite
+                                                    title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-Next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+
+    <section class="pt-8 pb-8" id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <h3 class="display-4">
+                            Hakkımızda
+                        </h3>
+                        <p class="mt-3">
+                            Emre Modern dericilik olarak ham deriyi işleyip renklendiriyoruz ve
+                            kullanım için tedarik sağlıyoruz.
+                            Emre Modern dericilik olarak ham deriyi işleyip renklendiriyoruz ve
+                            kullanım için tedarik sağlıyoruz.
+                            Emre Modern dericilik olarak ham deriyi işleyip renklendiriyoruz ve
+                            kullanım için tedarik sağlıyoruz.
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid d-block w-100" src="images/hakkimizda.jpg" alt="hakkimizda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Raw Hide Section-->
+    <section class="pt-8 pb-8 parallax-window" id="rawHideSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote class="blockquote">
+                        <h3 class="display-4">As Emre Deri, we process and color the raw leather and
+                            we provide supply for use.
+                        </h3>
+                        <p class="mt-3">For all your leather needs with our expert staff and wide machine park
+                            You can get an offer from the button below!
+                        </p>
+                        <button type="button" class="mt-3 btn btn-lg btn-outline-rawHide">Get Contact</button>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--LEATHER PROPERTIES SECTION-->
+    <section class="pt-8 pb-8" id="leatherProperties">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mr-optimum">
+                    <blockquote class="blockquote">
+                        <h3>Raw Leather Processing</h3>
+                        <p class="mt-4">We process first class and specially selected raw hides and offer them to your
+                            service.
+                            We process first class and specially selected raw hides and offer them to your service.</p>
+                    </blockquote>
+
+                </div>
+                <div class="col-md-3 mr-optimum">
+                    <blockquote class="blockquote">
+                        <h3>Leather Coloring</h3>
+                        <p class="mt-4">We dye our high-quality leathers with health-sensitive, pigment-rich dyes and
+                            achieve perfect results.
+                            We dye our high-quality leathers with health-sensitive, pigment-rich dyes and achieve
+                            perfect results.
+                        </p>
+                    </blockquote>
+
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <h3>Fast Delivery</h3>
+                        <p class="mt-4">We take your orders quickly and include them in the mass production line. In
+                            this way, we realize fast production and fast delivery.
+                            We take your orders quickly and include them in the mass production line. In this way, we
+                            realize fast production and fast delivery.
+                        </p>
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section class="p-8" id="aboutSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="display-5">
+                        Our Skills
+                    </h3>
+                    <div class="row mt-3">
+                        <div class="col-md-6 text-center">
+                            <div style="width:max-content!important">
+                                <div id="circle1" class="ldBar circle1 label-center" data-stroke="#FFD700"
+                                    data-preset="circle" data-value="0"></div>
+                                <p class="mt-2">Raw Hide</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div style="width:max-content!important">
+                                <div id="circle2" class="ldBar circle2 label-center" data-stroke="#FFD700"
+                                    data-preset="circle" data-value="0"></div>
+                                <p class="mt-2">Coloring</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6 text-center">
+                            <div style="width:max-content!important">
+                                <div id="circle3" class="ldBar circle3 label-center" data-stroke="#FFD700"
+                                    data-preset="circle" data-value="0"></div>
+                                <p class="mt-2">Design</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div style="width:max-content!important">
+                                <div id="circle4" class="ldBar circle4 label-center" data-stroke="#FFD700"
+                                    data-preset="circle" data-value="0"></div>
+                                <p class="mt-2">Marketing</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <h3 class="display-5">
+                            About Emre Deri
+                        </h3>
+                        <p class="mt-3">
+                            “There Is Nature in Our Chemistry!” </br></br>
+
+                            We give leather its shape and color with our superior leather processing technology.
+                            We bring together leather making, one of the oldest professions of humanity, with craft and
+                            contribute to its transformation into art.
+                            We bring a different perspective to the leather industry with our understanding of superior
+                            quality, qualified products and fast supply.
+                            </br>
+                            </br>
+                            We process and color leather with nature-friendly materials.
+                            In this way, we produce breathable leathers and prioritize human health.
+                            “Mert Deri” for quality service and flawless leather
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row mt-8">
+                <div class="col-md-3"><span class="display-4 counter">555</span>
+                    <p class="display-5">Completed Works</p>
+                </div>
+                <div class="col-md-3"><span class="display-4 counter">666</span>
+                    <p class="display-5">Leather Number</p>
+                </div>
+                <div class="col-md-3"><span class="display-4 counter">777</span>
+                    <p class="display-5">Completed Works</p>
+                </div>
+                <div class="col-md-3"><span class="display-4 counter">888</span>
+                    <p class="display-5">Completed Works</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MILESTONE SECTION-->
+    <section class="pt-8 pb-8" id="mileStoneSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <blockquote class="blockquote">
+                                <h3 class="display-4">
+                                    Kilometre Taşları
+                                </h3>
+                                <p class="mt-5">
+                                    Temelleri 1957 yılında atılan Alkoç Deri, 63 yılı aşan yolculuğunda, değişimin hep
+                                    bir adım önünde olarak sadece Türkiye'nin değil Avrasya kıtasının en büyük ve
+                                    başarılı gruplarından biri haline gelmiştir.
+                                    Tüm faaliyetlerinde uluslararası standartlara uyum ve sürekli gelişim amacını
+                                    gözeten İskefe Holding, ülkesinde yakaladığı başarıyı dünyada yakalama hedefine adım
+                                    adım ilerleyen bir dünya oyuncusudur.
+                                    İskefe Holding bünyesinde yedi Deri Fabrikası, Jelatin Üretim Fabrikası, Protein
+                                    Üretim Fabrikası, Hidrolizat Üretim Fabrikası, Hayvansal Kaynaklı Sıvı Aminoasit
+                                    Üretim Fabrikası ve AR-GE Merkezi bulunmaktadır.
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="listStyle mr-5">
+                                    <div class="mileStoneGoldCounter"><span class="counter">150,000</span> m2</div>
+                                    <p>Kapalı Alan</p>
+                                </li>
+                                <li class="listStyle mr-5">
+                                    <div class="mileStoneGoldCounter">%<span class="counter">60</span></div>
+                                    <p>İhracat Payı</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="listStyle">
+                                    <div class="mileStoneGoldCounter"><span class="counter">750</span></div>
+                                    <p>Çalışan</p>
+                                </li>
+                                <li class="listStyle">
+                                    <div class="mileStoneGoldCounter"><span class="counter">60</span>+</div>
+                                    <p>İhracat Yapılan Ülke</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/timeline_2006.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/timeline_2012.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/timeline_2013.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid" src="images/logo/logopng.png" alt="footer_logo">
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Kurumsal</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">Topluluk Profili</a></li>
+                        <li class="listStyle"><a href="#">Değerlerimiz</a></li>
+                        <li class="listStyle"><a href="#">Kilometre Taşları</a></li>
+                        <li class="listStyle"><a href="#">İnsan Kaynakları Politikamız</a></li>
+                        <li class="listStyle"><a href="#">Üretim Merkezlerimiz</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Bize Ulaşın</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">No: +90 554 512 15 60</a></li>
+                        <li class="listStyle"><a href="#">E-mail: info@emremoderndericilik.com</a></li>
+                        <li class="listStyle mt-2">
+                            <h3>Sosyal Medya Hesaplarımız</h3>
+                        </li>
+                        <li class="listStyle">
+                            <a href="#"><i class="bi-facebook mr-3" style="font-size: 2rem; color: #4267B2"></i></a>
+                            <a href="#"><i class="bi-instagram mr-3" style="font-size:2rem; color: #d6249f"></i></a>
+                            <a href="#"><i class="bi-twitter" style="font-size:2rem; color:#1DA1F2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Adresimiz</h3>
+                        </li>
+                        <li class="listStyle">
+                            <p>
+                                İSKEFE HOLDİNG ANONİM ŞİRKETİ</br>
+
+                                İstanbul Deri Organize Sanayi Bölgesi</br>
+                                L3-4C Parsel, 34956, Tuzla/İstanbul</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright row mt-5 pt-3 text-center">
+                <div class="col-md-12">
+                    <span class=" text-center">Copyright © Emre Modern Dericilik 2021 Tüm Hakları Saklıdır.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+
+    <!--3D TRANSITION EFFECT SCRIPT-->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".parallaxHome"), {
+            max: 50,
+            speed: 500,
+            perspective: 500
+        });
+    </script>
+
+
+    <script>
+        $('.parallax-window').parallax({ imageSrc: '/images/nubuk.jpg' });
+    </script>
+
+
+    <script>
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 1000,
+            wrap: false
+        })
+    </script>
+
+
+    <!--LOADING BAR SCRIPT-->
+    <script>
+        var ldbar = new ldBar(".circle1");
+        var ldbar2 = new ldBar(".circle2");
+        var ldbar3 = new ldBar(".circle3");
+        var ldbar4 = new ldBar(".circle4");
+        ldbar.set(80); ldbar2.set(75); ldbar3.set(100); ldbar4.set(50); 
+    </script>
+
+    <!--NAVBAR ANIMATION SCRIPT-->
+    <script>
+        if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) || !$(window).width > 998) {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 70) {
+                    $('.navbarStyle').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.navbarStyle').removeClass('affix');
+                }
+            });
+        }
+    </script>
+    <script>
+        let burger = document.getElementById('burger'),
+            nav = document.getElementById('main-nav');
+
+        burger.addEventListener('click', function (e) {
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+        /* Onload demo - dirty timeout */
+        let clickEvent = new Event('click');
+
+        window.addEventListener('load', function (e) {
+            burger.dispatchEvent(clickEvent);
+        });
+    </script>
+</body>
+
+</html>
