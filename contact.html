@@ -269,6 +269,20 @@
         }
     </script>
 
+    <!--RESPONSIVE FIX-->
+    <script>
+        if (window.matchMedia("(max-width: 767px)").matches) 
+        { 
+            $('#footer .col-md-3').addClass('mt-4');
+            $('#contact .col-md-4').addClass('mt-5');
+            $('#contact h3').removeClass('display-2');
+            $('#contact h3').addClass('display-3');
+
+
+
+        } 
+    </script>
+
     <!--MOBILE MENU SCRIPT-->
     <script>
         let burger = document.getElementById('burger'),
