@@ -29,7 +29,8 @@
                 </div>
                 <div class="col-md-6 mt-3">
                     <ul class="list-group list-group-horizontal-md justify-content-center">
-                        <li class="nav-item active listStyle mr-5"><a class="nav-link" href="/emre_dericilik/index.html">About</a></li>
+                        <li class="nav-item active listStyle mr-5"><a class="nav-link"
+                                href="/emre_dericilik/index.html">About</a></li>
                         <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Portfolio</a></li>
                         <li class="nav-item listStyle mr-5"><a class="nav-link" href="#">Services</a></li>
                         <li class="nav-item listStyle"><a class="nav-link"
@@ -280,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
 
                 </div>
                 <div class="col-md-6" id="secondColOurSkills">
@@ -520,28 +521,42 @@
             });
         }
     </script>
-    
+
     <!--RESPONSIVE FIX-->
     <script>
-        if (window.matchMedia("(max-width: 767px)").matches) 
-        { 
+        if (window.matchMedia("(max-width: 767px)").matches) {
             $('#secondColOurSkills').addClass('mt-5');
             $('#footer .col-md-3').addClass('mt-4');
         } 
     </script>
     <script>
         let burger = document.getElementById('burger'),
-            nav = document.getElementById('main-nav');
+            nav = document.getElementById('main-nav'),
+            slowmo = document.getElementById('slowmo');
 
         burger.addEventListener('click', function (e) {
             this.classList.toggle('is-open');
             nav.classList.toggle('is-open');
         });
+
+        slowmo.addEventListener('click', function (e) {
+            this.classList.toggle('is-slowmo');
+        });
+
         /* Onload demo - dirty timeout */
         let clickEvent = new Event('click');
 
         window.addEventListener('load', function (e) {
+            slowmo.dispatchEvent(clickEvent);
             burger.dispatchEvent(clickEvent);
+
+            setTimeout(function () {
+                burger.dispatchEvent(clickEvent);
+
+                setTimeout(function () {
+                    slowmo.dispatchEvent(clickEvent);
+                }, 3500);
+            }, 5500);
         });
     </script>
 </body>

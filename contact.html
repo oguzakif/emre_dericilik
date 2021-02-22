@@ -79,7 +79,7 @@
         <div class="container">
             <div class="row">
                 <div class="pt-10 pb-10">
-                   <h3 class="display-5">Anasayfa/İletişim</h3> 
+                    <h3 class="display-5">Anasayfa/İletişim</h3>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
     </section>
 
 
-    <section class="mb-8" id ="mailForm">
+    <section class="mb-8" id="mailForm">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-4 p-5 justify-content-center formStyle">
@@ -144,29 +144,35 @@
                         <h3 class="display-4 text-center">
                             İletişim Formu
                         </h3>
-                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="İsim alanının doldurulması gereklidir">
-                                <blockquote class="blockquote">
-                                    <h3 class="display-6">Adınız</h3>
-                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen adınızı giriniz">
-                                </blockquote>
-                            </div>
-                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="Mail alanının doldurulması zorunludur">
-                                <blockquote class="blockquote">
-                                    <h3 class="display-6">Email</h3>
-                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen email adresinizi giriniz">
-                                </blockquote>
-                                
-                            </div>
-                            <div class="row validate-input justify-content-center p-4 mt-4" data-validate="Mesaj alanının doldurulması gereklidir.">
-                                <blockquote class="blockquote">
-                                    <h3 class="display-6">Mesajınız</h3>
-                                    <input class="input inputPlace" type="text" name="name" placeholder="Lütfen mesajınızı giriniz">
-                                </blockquote>
-                            </div>
-                            <div class="row justify-content-center p-5">
-                                <button class="btn btn-success">
-                                    <span>Gönder</span>
-                                </button>
+                        <div class="row validate-input justify-content-center p-4 mt-4"
+                            data-validate="İsim alanının doldurulması gereklidir">
+                            <blockquote class="blockquote">
+                                <h3 class="display-6">Adınız</h3>
+                                <input class="input inputPlace" type="text" name="name"
+                                    placeholder="Lütfen adınızı giriniz">
+                            </blockquote>
+                        </div>
+                        <div class="row validate-input justify-content-center p-4 mt-4"
+                            data-validate="Mail alanının doldurulması zorunludur">
+                            <blockquote class="blockquote">
+                                <h3 class="display-6">Email</h3>
+                                <input class="input inputPlace" type="text" name="name"
+                                    placeholder="Lütfen email adresinizi giriniz">
+                            </blockquote>
+
+                        </div>
+                        <div class="row validate-input justify-content-center p-4 mt-4"
+                            data-validate="Mesaj alanının doldurulması gereklidir.">
+                            <blockquote class="blockquote">
+                                <h3 class="display-6">Mesajınız</h3>
+                                <input class="input inputPlace" type="text" name="name"
+                                    placeholder="Lütfen mesajınızı giriniz">
+                            </blockquote>
+                        </div>
+                        <div class="row justify-content-center p-5">
+                            <button class="btn btn-success">
+                                <span>Gönder</span>
+                            </button>
                     </form>
                 </div>
             </div>
@@ -180,7 +186,7 @@
             </iframe>
         </div>
     </section>
-    
+
 
 
     <footer class="footer" id="footer">
@@ -271,8 +277,7 @@
 
     <!--RESPONSIVE FIX-->
     <script>
-        if (window.matchMedia("(max-width: 767px)").matches) 
-        { 
+        if (window.matchMedia("(max-width: 767px)").matches) {
             $('#footer .col-md-3').addClass('mt-4');
             $('#contact .col-md-4').addClass('mt-5');
             $('#contact h3').removeClass('display-2');
@@ -286,17 +291,32 @@
     <!--MOBILE MENU SCRIPT-->
     <script>
         let burger = document.getElementById('burger'),
-            nav = document.getElementById('main-nav');
+            nav = document.getElementById('main-nav'),
+            slowmo = document.getElementById('slowmo');
 
         burger.addEventListener('click', function (e) {
             this.classList.toggle('is-open');
             nav.classList.toggle('is-open');
         });
+
+        slowmo.addEventListener('click', function (e) {
+            this.classList.toggle('is-slowmo');
+        });
+
         /* Onload demo - dirty timeout */
         let clickEvent = new Event('click');
 
         window.addEventListener('load', function (e) {
+            slowmo.dispatchEvent(clickEvent);
             burger.dispatchEvent(clickEvent);
+
+            setTimeout(function () {
+                burger.dispatchEvent(clickEvent);
+
+                setTimeout(function () {
+                    slowmo.dispatchEvent(clickEvent);
+                }, 3500);
+            }, 5500);
         });
     </script>
 </body>

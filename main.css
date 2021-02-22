@@ -258,7 +258,7 @@ section#footer > div > ul > li{
 /* mobile navbar sidebar under lg breakpoint */
 @media (max-width: 992px) {
     .mobileMenu{
-        display:block;
+        display:inline-block;
     }
     .desktopMenu{
         display:none;
