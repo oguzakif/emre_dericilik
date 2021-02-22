@@ -50,7 +50,7 @@ nav div {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url('images/carousel-background-1.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('images/carousel-background-4.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-position: center center;
 	background-size:cover;
     background-blend-mode: overlay;
@@ -58,7 +58,7 @@ nav div {
 .home2 {
     width: 100%;
     height: 100vh;
-    background-image: url('images/carousel-background-2.png') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('images/carousel-background-5.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-position: center center;
 	background-size:cover;
     background-blend-mode: overlay;
