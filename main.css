@@ -153,7 +153,7 @@ section#rawHideSection div blockquote h3 ~ p{
     background-blend-mode: overlay;
     height:max-content;
     width:auto;
-    color:rgb(255,255,255,.9);
+    color:rgba(255,255,255,.96);
 }
 
 section#ourSkillsSection div blockquote p {
@@ -162,7 +162,7 @@ section#ourSkillsSection div blockquote p {
 
 #footer{
     background-color: black;
-    color:rgb(255,255,255,.9);
+    color:rgba(255,255,255,.96);
     padding:10rem 10rem 3rem 10rem;
     height:max-content;
 
@@ -170,7 +170,12 @@ section#ourSkillsSection div blockquote p {
 #footer .listStyle a {
     font-size:1rem;
     text-decoration: none;
-    color:rgb(255,255,255,.8);
+    color:rgba(255,255,255,.67);
+}
+#footer .listStyle p {
+    font-size:1rem;
+    text-decoration: none;
+    color:rgba(255,255,255,.67);
 }
 #footer .listStyle a:hover {
     color:#FFD700;
