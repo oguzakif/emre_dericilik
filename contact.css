@@ -57,8 +57,7 @@
     transition: all 0.4s ease;
 }
 .btn-outline-contact:hover {
-    background-color:#FFD700;
-    color:#fff;
+    color:#FFD700;
     border: 2px solid #FFD700;
     
 }
