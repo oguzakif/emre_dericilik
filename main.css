@@ -23,6 +23,9 @@ nav div {
     line-height: 5rem;
     text-align: center;
 }
+.navbarStyle .navbar-nav {
+    width:100%;
+}
 
 .navbarStyle {
     -webkit-transition: all 0.4s ease;
