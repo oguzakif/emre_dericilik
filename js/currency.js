@@ -10,13 +10,13 @@ async function getCurrency() {
 async function renderCurrency() {
     let currencies = await getCurrency(); 
     let eurosegment = `<span id ="euroCurrency">
-                            ${(1 / currencies.rates.EUR).toFixed(5)}TRY
+                            ${(1 / currencies.rates.EUR).toFixed(2)}TRY
                         </span>
                         `;
 
     let dollarsegment = `
                     <span id ="dollarCurrency">
-                        ${(1 / currencies.rates.USD).toFixed(5)}TRY
+                        ${(1 / currencies.rates.USD).toFixed(2)}TRY
                     </span>`;
 
 
@@ -32,8 +32,8 @@ async function updateCurrency() {
     let euro = document.querySelector('#euroCurrency');
     let dollar = document.querySelector('#dollarCurrency');
 
-    euro.innerHTML = `${(1 / currencies.rates.EUR).toFixed(5)}TRY`;
-    dollar.innerHTML = `${(1 / currencies.rates.USD).toFixed(5)}TRY`;
+    euro.innerHTML = `${(1 / currencies.rates.EUR).toFixed(2)}TRY`;
+    dollar.innerHTML = `${(1 / currencies.rates.USD).toFixed(2)}TRY`;
 
 }
 
