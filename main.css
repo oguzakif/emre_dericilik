@@ -15,6 +15,10 @@ nav div {
 
 
 /* Navbar section */
+.carousel-item{
+    transition:transform 1s ease , opacity .5s ease-out i !important;
+}
+
 
 .navbarStyle {
     width: 100%;
@@ -79,7 +83,7 @@ nav div {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url('images/carousel-background-4.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('images/carousel-images/carousel-background-4.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-position: center center;
 	background-size:cover;
     background-blend-mode: overlay;
@@ -87,7 +91,7 @@ nav div {
 .home2 {
     width: 100%;
     height: 100vh;
-    background-image: url('images/carousel-background-6.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('images/carousel-images/carousel-background-6.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-position: center center;
 	background-size:cover;
     background-blend-mode: overlay;
@@ -95,7 +99,7 @@ nav div {
 .home3 {
     width: 100%;
     height: 100vh;
-    background-image: url('images/mini-slider-1.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('images/carousel-images/mini-slider-1.jpg') , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-position: center center;
 	background-size:cover;
     background-blend-mode: overlay;
