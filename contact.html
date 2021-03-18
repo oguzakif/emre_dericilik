@@ -174,7 +174,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-4 p-5 justify-content-center formStyle">
-                    <form class="needs-validation" action="contact.php" role="form" method="post" novalidate>
+                    <form class="needs-validation" action="contact.php" role="form" method="POST" novalidate>
                         <h3 class="display-4 text-center">
                             İletişim Formu
                         </h3>
@@ -196,8 +196,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="subjectInput">Konu</label>
+                                <input type="text" class="form-control display-6" id="subject"
+                                    placeholder="Lütfen konuyu giriniz" name="subject" required>
+                                <div class="invalid-feedback">
+                                    Lütfen email alanını uygun bir şekilde doldurunuz.
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="messageInput">Mesaj</label>
-                                <textarea class="form-control display-6" id="message" placeholder="Mesaj alanı"
+                                <textarea class="form-control display-6" name = "message" id="message" placeholder="Mesaj alanı"
                                     required></textarea>
                                 <div class="invalid-feedback">
                                     Lütfen mesaj alanını uygun bir şekilde doldurunuz.
@@ -205,7 +213,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <button onclick="send()" type="submit" class="btn btn-xlg btn-outline-contact">
+                            <button onclick="send()" type="submit" value = "Send message" class="btn btn-xlg btn-outline-contact">
                                 <span>Gönder</span>
                             </button>
                         </div>
@@ -234,37 +242,6 @@
                 <div class="col-md-3">
                     <ul class="list-group">
                         <li class="listStyle">
-                            <h3>Kurumsal</h3>
-                        </li>
-                        <li class="listStyle"><a href="#">Topluluk Profili</a></li>
-                        <li class="listStyle"><a href="#">Değerlerimiz</a></li>
-                        <li class="listStyle"><a href="#">Kilometre Taşları</a></li>
-                        <li class="listStyle"><a href="#">İnsan Kaynakları Politikamız</a></li>
-                        <li class="listStyle"><a href="#">Üretim Merkezlerimiz</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list-group">
-                        <li class="listStyle">
-                            <h3>Bize Ulaşın</h3>
-                        </li>
-                        <li class="listStyle"><a href="#">No: +90 554 512 15 60</a></li>
-                        <li class="listStyle"><a href="#">E-mail: info@emremoderndericilik.com</a></li>
-                        <li class="listStyle mt-2">
-                            <h3>Sosyal Medya Hesaplarımız</h3>
-                        </li>
-                        <li class="listStyle">
-                            <a href="#"><i class="bi-facebook mr-3" style="font-size: 2rem; color: #4267B2"></i></a>
-                            <a href="#"><i class="bi-instagram mr-3" style="font-size:2rem; color: #d6249f"></i></a>
-                            <a href="#"><i class="bi-twitter" style="font-size:2rem; color:#1DA1F2"></i></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list-group">
-                        <li class="listStyle">
                             <h3>Adresimiz</h3>
                         </li>
                         <li class="listStyle">
@@ -276,6 +253,42 @@
                         </li>
                     </ul>
                 </div>
+               <!-- <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Kurumsal</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">Topluluk Profili</a></li>
+                        <li class="listStyle"><a href="#">Değerlerimiz</a></li>
+                        <li class="listStyle"><a href="#">Kilometre Taşları</a></li>
+                        <li class="listStyle"><a href="#">İnsan Kaynakları Politikamız</a></li>
+                        <li class="listStyle"><a href="#">Üretim Merkezlerimiz</a></li>
+
+                    </ul>
+                </div>-->
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Bize Ulaşın</h3>
+                        </li>
+                        <li class="listStyle"><a href="#">No: +90 554 512 15 60</a></li>
+                        <li class="listStyle"><a href="#">E-mail: info@emremoderndericilik.com</a></li>
+                        <li class="listStyle mt-2">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="listStyle">
+                            <h3>Sosyal Medya Hesaplarımız</h3>
+                            <a href="#"><i class="bi-facebook mr-3" style="font-size: 2rem; color: #4267B2"></i></a>
+                            <a href="#"><i class="bi-instagram mr-3" style="font-size:2rem; color: #d6249f"></i></a>
+                            <a href="#"><i class="bi-twitter" style="font-size:2rem; color:#1DA1F2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                
             </div>
             <div class="copyright row mt-5 pt-3 text-center">
                 <div class="col-md-12">
