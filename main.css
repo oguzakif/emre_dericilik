@@ -15,10 +15,6 @@ nav div {
 
 
 /* Navbar section */
-.carousel-item{
-    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
-}
-
 
 .navbarStyle {
     width: 100%;
