@@ -16,7 +16,7 @@ nav div {
 
 /* Navbar section */
 .carousel-item{
-    transition:transform all .4 ease !important;
+    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
 }
 
 
