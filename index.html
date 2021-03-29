@@ -95,6 +95,14 @@
                 <li>
                     <a href="/emre_dericilik/contact.html">İletişim</a>
                 </li>
+                <li>
+                    <select class="btn nav-item form-control" onchange="javascript:handleSelect(this)">
+                        <option value="index">Türkçe</option>
+                        <option value="index-en">English</option>
+                        <option value="index-arab">عربي</option>
+                        <option value="index-rus">русский</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </div>
@@ -534,6 +542,15 @@
             $('#footer .col-md-3').addClass('mt-4');
         } 
     </script>
+
+    <!--SELECT HREF SCRIPT-->
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+    </script>
+
 
     <!--SMOOTH SCROLL EFFECT-->
     <script>

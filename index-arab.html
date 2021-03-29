@@ -96,6 +96,14 @@
                 <li>
                     <a href="/emre_dericilik/contact.html">اتصال</a>
                 </li>
+                <li>
+                    <select class="btn nav-item form-control" onchange="javascript:handleSelect(this)">
+                        <option value="index-arab">عربي</option>
+                        <option value="index">Türkçe</option>
+                        <option value="index-en">English</option>
+                        <option value="index-rus">русский</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </div>
@@ -493,6 +501,13 @@
         });
     </script>
 
+    <!--SELECT HREF SCRIPT-->
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+    </script>
 
     <!--3D TRANSITION EFFECT SCRIPT-->
     <script type="text/javascript">
