@@ -1,5 +1,5 @@
 async function getCurrency() {
-    let url = 'https://api.exchangeratesapi.io/latest?base=TRY';
+    let url = 'http://data.fixer.io/api/latest?access_key=2a8031392c85ca5f17b33fc7b0891812&format=1';
     try {
         let res = await fetch(url);
         return await res.json();
@@ -10,13 +10,13 @@ async function getCurrency() {
 async function renderCurrency() {
     let currencies = await getCurrency(); 
     let eurosegment = `<span id ="euroCurrency">
-                            ${(1 / currencies.rates.EUR).toFixed(2)}TRY
+                        ${(currencies.rates.TRY).toFixed(2)}TRY
                         </span>
                         `;
 
     let dollarsegment = `
                     <span id ="dollarCurrency">
-                        ${(1 / currencies.rates.USD).toFixed(2)}TRY
+                    ${(currencies.rates.TRY/currencies.rates.USD).toFixed(2)}TRY
                     </span>`;
 
 
@@ -32,10 +32,10 @@ async function updateCurrency() {
     let euro = document.querySelector('#euroCurrency');
     let dollar = document.querySelector('#dollarCurrency');
 
-    euro.innerHTML = `${(1 / currencies.rates.EUR).toFixed(2)}TRY`;
-    dollar.innerHTML = `${(1 / currencies.rates.USD).toFixed(2)}TRY`;
+    euro.innerHTML = `${(currencies.rates.TRY).toFixed(2)}TRY`;
+    dollar.innerHTML = `${(currencies.rates.TRY/currencies.rates.USD).toFixed(2)}TRY`;
 
 }
 
 renderCurrency();
-setInterval(updateCurrency, 10000);
+setInterval(updateCurrency, 396000);
